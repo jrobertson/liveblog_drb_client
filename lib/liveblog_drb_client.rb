@@ -23,6 +23,10 @@ class LiveblogDRbClient
   def date()
     @lb.date
   end
+    
+  def load_file(filepath)
+    @lb.load_file(filepath)
+  end
   
   def import(s)
     @lb.import(s)
