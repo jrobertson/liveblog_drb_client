@@ -24,6 +24,10 @@ class LiveblogDRbClient
     @lb.date
   end
   
+  def import(s)
+    @lb.import(s)
+  end
+  
   def raw_view(tag)
     @lb.raw_view tag
   end
@@ -34,4 +38,3 @@ class LiveblogDRbClient
   end
 
 end 
-
