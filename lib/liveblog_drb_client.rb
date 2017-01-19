@@ -5,7 +5,7 @@
 require 'drb'
 
 
-class DRbLiveblogClient
+class LiveblogDRbClient
 
 
   def initialize(host: 'localhost', port: '60500')
