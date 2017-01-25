@@ -40,5 +40,10 @@ class LiveblogDRbClient
     @lb.new_day if Date.today > @date
     @lb.update s
   end
+  
+  def valid_entry?(s)
+    @lb.valid_entry?(s)
+  end
 
 end 
+
