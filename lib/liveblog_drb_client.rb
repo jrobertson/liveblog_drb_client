@@ -39,7 +39,6 @@ class LiveblogDRbClient
   end
   
   def new_file()
-    puts 'new_file'
     @lb.new_file
   end
   
@@ -54,6 +53,10 @@ class LiveblogDRbClient
   def restart()
     @lb.restart
   end
+  
+  def tags()
+    @lb.tags()
+  end  
 
   def update(s)
     @lb.new_day if Date.today > @date
@@ -69,4 +72,3 @@ class LiveblogDRbClient
   end  
 
 end 
-
